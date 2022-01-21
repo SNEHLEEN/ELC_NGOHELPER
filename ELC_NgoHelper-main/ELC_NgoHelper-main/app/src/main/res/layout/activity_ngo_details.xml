@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NgoDetails"
+    android:background="@drawable/redbackground">
+
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Name of NGO"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/t3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <EditText
+        android:id="@+id/t3"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Mail id"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <EditText
+        android:id="@+id/t4"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Contact Number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/t5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/t5"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Address"
+        android:inputType="textLongMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t4" />
+
+    <EditText
+        android:id="@+id/t6"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Pincode"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t5" />
+
+    <EditText
+        android:id="@+id/t7"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="About your NGO"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t6" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="b1"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#F40000" />
+
+    <EditText
+        android:id="@+id/t8"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Any specific requirements"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t7" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Details"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/p1"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="SetUp Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t8"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:onClick="h1"
+        android:text="HOME"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
